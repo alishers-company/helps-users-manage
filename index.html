@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>helps users manage</title>
+    <meta
+      id="meta-description"
+      name="description"
+      content="helps users manage and organize household chores and tasks"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-starter="dashboard">
+    <div class="dash-shell" data-testid="site-shell">
+      <aside class="dash-sidebar">
+        <div class="sidebar-brand">
+          <div class="brand-mark">h</div>
+          <span class="brand-name">helps users manage</span>
+        </div>
+        <nav class="sidebar-nav" data-testid="primary-nav">
+    <a href="#home" class="sidebar-item active">
+      <span class="sidebar-icon">&#9776;</span>
+      <span>Home</span>
+    </a>
+    <a href="#task-list-with-filtering-by-due-date-or-assignee" class="sidebar-item ">
+      <span class="sidebar-icon">&#9635;</span>
+      <span>task list with filtering by due date or assignee</span>
+    </a>
+    <a href="#metrics" class="sidebar-item ">
+      <span class="sidebar-icon">&#9783;</span>
+      <span>Metrics</span>
+    </a></nav>
+        <div class="sidebar-footer">
+          <div class="sidebar-user">
+            <div class="user-avatar">W</div>
+            <div>
+              <p class="user-name">Working parents with kids</p>
+              <p class="user-role">Admin</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <div class="dash-main">
+        <header class="dash-topbar">
+          <button class="menu-toggle" data-testid="mobile-nav-toggle" aria-expanded="false"><span></span><span></span><span></span></button>
+          <div>
+            <h1 id="page-title" class="dash-page-title">Dashboard</h1>
+            <p class="dash-page-desc">helps users manage and organize household chores and tasks</p>
+          </div>
+          <div class="dash-topbar-actions">
+            <button class="btn-secondary btn-sm" type="button" data-testid="interactive-demo">Export</button>
+            <a class="btn-primary btn-sm" href="#" data-testid="primary-cta">+ New</a>
+          </div>
+        </header>
+
+        <main class="dash-content" data-testid="hero-section">
+          <section class="metrics-grid" data-testid="feature-grid">
+      <div class="metric-card">
+        <p class="metric-label">set due dates for tasks</p>
+        <p class="metric-value">2,847</p>
+        <span class="metric-delta positive">+12.5%</span>
+      </div>
+      <div class="metric-card">
+        <p class="metric-label">receive reminders</p>
+        <p class="metric-value">94.2%</p>
+        <span class="metric-delta positive">+3.1%</span>
+      </div>
+      <div class="metric-card">
+        <p class="metric-label">assign tasks to specific family members</p>
+        <p class="metric-value">1,203</p>
+        <span class="metric-delta negative">-2.4%</span>
+      </div>
+      <div class="metric-card">
+        <p class="metric-label">task list with filtering by due date or assignee</p>
+        <p class="metric-value">348</p>
+        <span class="metric-delta positive">+18.7%</span>
+      </div></section>
+
+          <div class="dash-two-col">
+            <section class="dash-card dash-card-wide">
+              <div class="card-header">
+                <h3>Overview</h3>
+                <div class="card-tabs">
+                  <button class="card-tab active">Week</button>
+                  <button class="card-tab">Month</button>
+                  <button class="card-tab">Year</button>
+                </div>
+              </div>
+              <div class="chart-placeholder">
+                <svg viewBox="0 0 400 120" class="chart-svg">
+                  <defs><linearGradient id="cg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="var(--accent)" stop-opacity="0.2"/><stop offset="100%" stop-color="var(--accent)" stop-opacity="0"/></linearGradient></defs>
+                  <path d="M0,100 C40,90 80,60 120,65 C160,70 200,30 240,35 C280,40 320,15 360,20 L400,10 L400,120 L0,120Z" fill="url(#cg)"/>
+                  <path d="M0,100 C40,90 80,60 120,65 C160,70 200,30 240,35 C280,40 320,15 360,20 L400,10" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </section>
+
+            <section class="dash-card">
+              <div class="card-header"><h3>Activity</h3></div>
+              <div class="activity-list">
+                
+                <div class="activity-item">
+                  <span class="activity-dot"></span>
+                  <span>task list with filtering by due date or assignee updated</span>
+                  <span class="activity-time">1m</span>
+                </div>
+                
+              </div>
+            </section>
+          </div>
+
+          <section class="dash-card">
+            <div class="card-header"><h3>Recent Items</h3><button class="btn-link">View all</button></div>
+            <table class="dash-table">
+              <thead><tr><th>Name</th><th>Owner</th><th>Status</th><th>Updated</th></tr></thead>
+              <tbody>
+      <tr>
+        <td><span class="table-name">set due dates for tasks</span></td>
+        <td>Working parents with kids</td>
+        <td><span class="status-badge status-active">Active</span></td>
+        <td class="table-date">1h ago</td>
+      </tr>
+      <tr>
+        <td><span class="table-name">receive reminders</span></td>
+        <td>Working parents with kids</td>
+        <td><span class="status-badge status-pending">Pending</span></td>
+        <td class="table-date">2h ago</td>
+      </tr>
+      <tr>
+        <td><span class="table-name">assign tasks to specific family members</span></td>
+        <td>Working parents with kids</td>
+        <td><span class="status-badge status-active">Active</span></td>
+        <td class="table-date">3h ago</td>
+      </tr>
+      <tr>
+        <td><span class="table-name">task list with filtering by due date or assignee</span></td>
+        <td>Working parents with kids</td>
+        <td><span class="status-badge status-review">Review</span></td>
+        <td class="table-date">4h ago</td>
+      </tr>
+      <tr>
+        <td><span class="table-name">Responsive layout</span></td>
+        <td>Working parents with kids</td>
+        <td><span class="status-badge status-active">Active</span></td>
+        <td class="table-date">5h ago</td>
+      </tr></tbody>
+            </table>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
